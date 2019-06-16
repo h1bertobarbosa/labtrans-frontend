@@ -3,6 +3,8 @@ import Router from 'vue-router'
 // import Home from './views/Home.vue'
 import LoginForm from './components/LoginForm.vue'
 import RegisterUser from './components/RegisterUser.vue'
+import RegisterSala from './components/RegisterSala.vue'
+import RegisterLocal from './components/RegisterLocal.vue'
 import ListarReservas from './components/ListarReservas.vue'
 
 Vue.use(Router)
@@ -15,6 +17,16 @@ const router = new Router({
       component: RegisterUser
     },
     {
+      path: '/registrar/sala',
+      name: 'registrar_sala',
+      component: RegisterSala
+    },
+    {
+      path: '/registrar/local',
+      name: 'registrar_local',
+      component: RegisterLocal
+    },
+    {
       path: '/login',
       name: 'login',
       component: LoginForm
@@ -24,14 +36,6 @@ const router = new Router({
       name: 'reservas',
       component: ListarReservas
     }
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    // }
   ]
 })
 

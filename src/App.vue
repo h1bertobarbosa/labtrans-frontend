@@ -5,6 +5,8 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn to="/reservas" flat>Reservas</v-btn>
+      <v-btn to="/registrar/sala" flat>Nova sala</v-btn>
+      <v-btn to="/registrar/local" flat>Novo local</v-btn>
       <v-btn to="/login" flat>Login</v-btn>
       <v-btn to="/registrar/usuario" flat>Registrar</v-btn>
     </v-toolbar-items>
